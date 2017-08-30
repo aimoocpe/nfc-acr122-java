@@ -56,7 +56,7 @@ public class ScannerCard implements Runnable {
 			clipboard.setContents(stringSelection, null);
 			//Use Robot class instance to simulate CTRL+C and CTRL+V key events :
 
-			robot.keyPress(KeyEvent.VK_META);
+			robot.keyPress(KeyEvent.VK_META); // Windows use VK_CONTROL
 			robot.keyPress(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_V);
 			robot.keyRelease(KeyEvent.VK_META);
